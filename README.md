@@ -26,3 +26,4 @@ A main.py file was used for the main program that the Raspberry Pi loads and run
 WiFi connection is established, using config.py, and a timeout of 15 seconds is set. After this, the BME280 sensor readings are retrieved, along with the LED status (reading "ON" or "OFF" as strings, this is not a boolean value). 
 If connection to the MQTT server is established, then a publish function is called, sending the sensor readings in JSON format, and under the topic sensor/data. After this is done, the program looks for new incoming messages from the server, at a 3 second refresh rate.
 
+Video Demo of Application, Rasberry Pi MQTT broker, and HiveMQ Cloud Server: https://www.youtube.com/watch?v=Lkvbq-PwJ9s
