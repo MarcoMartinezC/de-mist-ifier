@@ -1,0 +1,5 @@
+wifi_ssid = 'SatinLordOfAllFabrics'
+wifi_password = 'password'
+mqtt_server = b'18a8caf27c6b40449526c0491ea5c727.s1.eu.hivemq.cloud'
+mqtt_username = b'raspberrypi'
+mqtt_password = b'Q11plebada'
