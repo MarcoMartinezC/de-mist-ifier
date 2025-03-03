@@ -95,7 +95,7 @@ fun WeatherDataScreen() {
     Column(modifier = Modifier.padding(16.dp)) {
         //App title. I wanted it to look similar to "Two Plus Two Machine"
         Text(
-            text = "De-mist-ifer", //My wife came up with the name
+            text = "De-mist-ifier", //My wife came up with the name
             style = MaterialTheme.typography.displayLarge,
             modifier = Modifier.padding(bottom = 32.dp)
         )
