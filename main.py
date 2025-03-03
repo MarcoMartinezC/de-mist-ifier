@@ -32,7 +32,8 @@ MQTT_SSL_PARAMS = {"server_hostname": MQTT_SERVER}
 i2c = I2C(id=1, scl=Pin(3), sda=Pin(2), freq=10000)
 utime.sleep_ms(500)
 
-# Initialize BME280 sensor
+#Initialize BME280 sensor
+#added 500 sleep timer to ensure connection to I2C is set.
 bme = BME280.BME280(i2c=i2c, addr=0x77)
 utime.sleep_ms(500)
 
@@ -133,7 +134,7 @@ try:
 
             #Check for new incoming MQTT messages
             print("Checking for MQTT messages...")
-            for _ in range(10):  #Check messages every second for 10 seconds
+            for _ in range(3):  #Check messages every 3 seconds
                 client.check_msg()
                 sleep(1)
 #general error handling
