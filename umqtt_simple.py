@@ -5,7 +5,7 @@ import utime
 from ubinascii import hexlify
 
 class MQTTClient:
-    def __init__(self, client_id, server, port=1883):
+    def __init__(self, client_id, server, port=8883):
         self.client_id = client_id
         self.server = server
         self.port = port

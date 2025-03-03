@@ -7,8 +7,8 @@ from umqtt_simple import MQTTClient
 
 
 #MQTT Configuration
-MQTT_BROKER = "192.168.1.100"  #broker's IP or hostname
-MQTT_TOPIC = "weather/data"
+MQTT_BROKER = "ssl:18a8caf27c6b40449526c0491ea5c727.s1.eu.hivemq.cloud:8883"  #broker's IP or hostname
+MQTT_TOPIC = "sensor/data"
 CLIENT_ID = "PicoWeatherStation"
 
 #I2C initialization on I2C0 (GP4=SDA, GP5=SCL)
