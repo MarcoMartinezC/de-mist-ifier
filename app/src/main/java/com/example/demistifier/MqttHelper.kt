@@ -91,6 +91,8 @@ class MqttHelper(context: Context) {
 
     //publish topic for LED status/toggle switch
     fun publish(topic: String, message: String) {
+        //try/catch blocks are a must for any internet/connection lag. I did not encounter the publish message error too much here, but it was set up to prevent the initial
+        //application insta-crashes that I originally encountered
         try {
             val mqttMessage = MqttMessage(message.toByteArray())
             mqttClient?.publish(topic, mqttMessage)
